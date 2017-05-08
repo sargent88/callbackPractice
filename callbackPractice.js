@@ -29,7 +29,11 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 first(names, function(firstName){
   console.log('The first name in names is ' + firstName)
 });
-
+function first (names) {
+  for (var i = 0; i < names.length; i+2) {
+    console.log(names[i]);
+  }
+}
 
 
 // 2. Write a function called last which returns the last item of the array using a callback function.
